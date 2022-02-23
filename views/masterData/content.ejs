@@ -1,0 +1,33 @@
+<section class="content">
+    <div class="col-12">
+        <div class="box">
+            <div class="box-header">
+                <h4 class="box-title">Master Data</h4>
+            </div>
+            <div class="box-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered mb-0">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Nama</th>
+                                <th>NIK</th>
+                                <th>Alamat</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% for (let i = 0; i < user.length; i++) { %>
+                            <tr>
+                                <td><%= i + 1 %></td>
+                                <td><%= user[i].nama %></td>
+                                <td><%= user[i].nik %></td>
+                                <td><%= user[i].alamat %></td>
+                            </tr>
+                            <%}%>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
